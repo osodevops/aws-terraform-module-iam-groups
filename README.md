@@ -35,7 +35,7 @@ module "iam-groups" {
 
 #### Role 1:  Business Owner
 
-**Description:**  Ultimate owner of the business / CEO / Founder
+**Description:** Ultimate owner of the business / CEO / Founder
 
 Everything including billing. Owners should setup the Multi Factor Authentication. All the others users (including admin/ctos) should only login via IAM logins. Owner can set up an IAM role to share billing settings with CTO but this should be done via console.
 
@@ -43,17 +43,17 @@ Everything including billing. Owners should setup the Multi Factor Authenticatio
 
 **Security Recommendation** Restrict access from the workplace/VPN IP (Static IP) 
 
-#### Role 2:  Budget Owner
+#### Role 2: Budget Owner
 
-**Description:**  Owner of the cloud infrastructure costs and budgets.
+**Description:** Owner of the cloud infrastructure costs and budgets.
 
 Everything including billing. Logs in using IAM role. Owner should setup a IAM role to share billing settings with Architect but this should be done via console.
 
-**AWS Resource Permissions:** 
+**AWS Resource Permissions:**
 
 **Security Recommendation** Restrict access from the workplace/VPN IP (Static IP) 
 
-#### Role 3:  Frontend Developer**
+#### Role 3:  Frontend Developer
 
 **Description:**  Responsible for development of user facing front-end.
 
@@ -68,9 +68,9 @@ Needs permission to debug issues related to frontend and setup some notification
 - SNS
 - Route53
 
-#### Role 4:  Backend Developer**
+#### Role 4: Backend Developer
 
-**Description:**  Responsible for development and monitoring of backend APIS.
+**Description:** Responsible for development and monitoring of backend APIS.
 
 Needs permission to debug issues related to frontend and setup some notifications if needed.
 
@@ -96,7 +96,7 @@ Needs permission to debug issues related to frontend and setup some notification
 
 ## OSO DevOps roles
 
-#### Role 1: Devops Engineer**
+#### Role 1: Devops Engineer
 
 **Description:** A DevOps Engineer is the bridge between developer, quality, and technology teams – helping them understand each other tasks and situations so that they can work together to get the best results. 
 They act as the engineering function of the team as well as the cloud architects.
@@ -125,9 +125,9 @@ They act as the engineering function of the team as well as the cloud architects
 - XRay
 - Cognito
 
-#### Role 2: Support Engineer**
+#### Role 2: Support Engineer
 
-**Description:**  Responsible for supporting and monitoring of the AWS hosted infrastructure.
+**Description:** Responsible for supporting and monitoring of the AWS hosted infrastructure.
 
 Needs permission's from the customer or the DevOps team to remove objects and work with resources not whitelisted in the IAM group policy.
 
