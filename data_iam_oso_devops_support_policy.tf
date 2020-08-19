@@ -85,7 +85,7 @@ data "aws_iam_policy_document" "oso_devops_support" {
   }
 
   statement {
-    sid = "AllowCreateIAMRoles",
+    sid = "AllowCreateIAMRoles"
     effect = "Allow"
     actions = [
       "iam:AddRoleToInstanceProfile",

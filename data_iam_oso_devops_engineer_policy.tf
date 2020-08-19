@@ -111,8 +111,8 @@ data "aws_iam_policy_document" "oso_devops_engineer" {
   }
 
   statement {
-    sid = "AllowCreateIAMRoles",
-    effect = "Allow",
+    sid = "AllowCreateIAMRoles"
+    effect = "Allow"
     actions = [
       "iam:AddRoleToInstanceProfile",
       "iam:RemoveRoleFromInstanceProfile",
@@ -175,7 +175,7 @@ data "aws_iam_policy_document" "oso_devops_engineer" {
   statement {
 
     sid = "SystemManagerAccess"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "ssm:AddTagsToResource",
       "ssm:CancelCommand",
