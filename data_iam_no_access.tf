@@ -2,7 +2,7 @@ data "aws_iam_policy_document" "no_access" {
 
   statement {
     sid = "DenyAllActions"
-    effect = "Deny",
+    effect = "Deny"
     actions = [
       "acm:*",
       "artifact:*",

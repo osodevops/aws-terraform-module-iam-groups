@@ -2,7 +2,7 @@ data "aws_iam_policy_document" "oso_devops_support" {
 
   statement {
     sid = "GeneralAccess"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "acm:*",
       "autoscaling:*",
@@ -86,7 +86,7 @@ data "aws_iam_policy_document" "oso_devops_support" {
 
   statement {
     sid = "AllowCreateIAMRoles",
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "iam:AddRoleToInstanceProfile",
       "iam:RemoveRoleFromInstanceProfile",
@@ -131,7 +131,7 @@ data "aws_iam_policy_document" "oso_devops_support" {
   statement {
 
     sid = "SystemManagerAccess"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "ssm:AddTagsToResource",
       "ssm:CancelCommand",
@@ -252,7 +252,7 @@ data "aws_iam_policy_document" "oso_devops_support" {
   statement {
 
     sid = "AllowParameterAccess"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "ssm:DescribeParameters",
       "ssm:GetParameterHistory",

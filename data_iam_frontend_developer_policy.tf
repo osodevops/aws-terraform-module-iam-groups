@@ -2,7 +2,7 @@ data "aws_iam_policy_document" "frontend_developer" {
 
   statement {
 
-    effect = "Allow",
+    effect = "Allow"
     actions = [
         "acm:*",
         "s3:*",

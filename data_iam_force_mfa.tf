@@ -2,7 +2,7 @@ data "aws_iam_policy_document" "iam_enforce_mfa" {
 
   statement {
     sid = "DenyAllExceptListedIfNoMFA"
-    effect = "Deny",
+    effect = "Deny"
     not_actions = [
       "iam:CreateVirtualMFADevice",
       "iam:EnableMFADevice",
@@ -26,7 +26,7 @@ data "aws_iam_policy_document" "iam_enforce_mfa" {
 
   statement {
     sid = "AllowAllUsersToListAccounts"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "iam:ListAccountAliases",
       "iam:ListUsers",
@@ -39,7 +39,7 @@ data "aws_iam_policy_document" "iam_enforce_mfa" {
 
   statement {
     sid = "AllowIndividualUserToSeeAndManageTheirOwnAccountInformation"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "iam:ChangePassword",
       "iam:CreateAccessKey",
@@ -68,7 +68,7 @@ data "aws_iam_policy_document" "iam_enforce_mfa" {
 
   statement {
     sid = "AllowIndividualUserToManageTheirOwnMFA"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "iam:ListVirtualMFADevices",
       "iam:ListMFADevices",

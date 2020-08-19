@@ -2,7 +2,7 @@ data "aws_iam_policy_document" "oso_devops_engineer" {
 
  statement {
     sid = "GeneralAdminAccess"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "acm:*",
       "artifact:*",
@@ -296,7 +296,7 @@ data "aws_iam_policy_document" "oso_devops_engineer" {
   statement {
 
     sid = "AllowParameterAccess"
-    effect = "Allow",
+    effect = "Allow"
     actions = [
       "ssm:DescribeParameters",
       "ssm:GetParameterHistory",
