@@ -18,12 +18,12 @@ resource "aws_iam_group_policy_attachment" "backend_developer" {
   policy_arn = aws_iam_policy.backend_developer.arn
 }
 
-resource "aws_iam_group_policy_attachment" "devops_engineer" {
+resource "aws_iam_group_policy_attachment" "oso_devops_engineer" {
   group      = aws_iam_group.oso_devops_engineer.name
   policy_arn = aws_iam_policy.oso_devops_engineer.arn
 }
 
-resource "aws_iam_group_policy_attachment" "support_engineer" {
+resource "aws_iam_group_policy_attachment" "oso_devops_support" {
   group      = aws_iam_group.oso_devops_support.name
   policy_arn = aws_iam_policy.oso_devops_support.arn
 }

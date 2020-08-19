@@ -22,13 +22,13 @@ resource "aws_iam_policy" "backend_developer" {
   policy      = data.aws_iam_policy_document.backend_developer.json
 }
 
-resource "aws_iam_policy" "devops_engineer" {
+resource "aws_iam_policy" "oso_devops_engineer" {
   name        = "oso-devops-engineer-group-policy"
   description = "An IAM group policy for OSO DevOps Engineers"
   policy      = data.aws_iam_policy_document.oso_devops_engineer.json
 }
 
-resource "aws_iam_policy" "support_engineer" {
+resource "aws_iam_policy" "oso_devops_support" {
   name        = "oso-devops-support-group-policy"
   description = "An IAM group policy for the OSO Support Engineers"
   policy      = data.aws_iam_policy_document.oso_devops_support.json
